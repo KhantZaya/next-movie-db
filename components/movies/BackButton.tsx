@@ -10,7 +10,7 @@ const BackButton = ({className} : Props) => {
 
   return (
     <button
-      className={`btn  absolute top-4 left-4 text-white ${className}`}
+      className={`btn absolute text-white ${className}`}
       onClick={() => router.back()}
     >
       {/* <Link href="/movies"> */}

@@ -29,7 +29,7 @@ const MovieDetailPage = async ({ params: { id } }: Props) => {
           backgroundImage: `url(https://image.tmdb.org/t/p/w1280/${movieData.backdrop_path})`,
         }}
       >
-        <BackButton />
+        <BackButton className="top-4 left-4"/>
         <div className="hero-content text-start text-white">
           <div className="max-w-3xl bg-black bg-opacity-40 p-6 rounded-md">
             <h1 className="mb-5 text-5xl font-bold">{movieData.title}</h1>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import SearchBox from "../../../../components/movies/SearchBox";
-import Pagination from "@/components/movies/Pagination";
 import BackButton from "@/components/movies/BackButton";
+import SearchBox from "@/components/movies/SearchBox";
 
 // components
 
@@ -17,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <div>
-        <BackButton className="top-20"/>
+        <BackButton className="top-20 left-4"/>
+        <SearchBox />
         {children}
     </div>
   );

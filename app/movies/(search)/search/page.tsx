@@ -29,7 +29,6 @@ const search = async ({
 
   return (
     <>
-      <SearchBox />
       <ul className="flex flex-row flex-wrap justify-center items-center">
         {searchQuery && movieList}
       </ul>

@@ -7,7 +7,7 @@ interface Props {
 }
 const SearchButton = ({ onClick }: Props) => {
   return (
-    <button onClick={onClick} className="btn btn-primary btn-outline">
+    <button onClick={onClick} className="btn btn-neutral">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
@@ -44,11 +44,11 @@ const SearchBox = () => {
           }}
           type="text"
           placeholder="Search here"
-          className="my-6 input input-primary w-full max-w-xs bg-base me-2"
+          className="my-6 input w-full max-w-xs bg-neutral-900 me-2 shadow-2xl"
         />
         <SearchButton onClick={submitHandler} />
       </form>
-      <p>Search result for - {searchTerm}</p>
+      <p className="font-bold">Search result for - {searchTerm}</p>
     </div>
   );
 };
